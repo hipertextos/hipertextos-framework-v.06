@@ -56,4 +56,5 @@ THIS FRAMEWORK IS DISTRIBUTED UNDER A MIT LICENSE. SOME SVG ICONS INCLUDED ARE D
 
 ##Author
 
-by www.hipertextos.net
+by [www.hipertextos.net](http://hipertextos.net/)
+Barcelona 2014
