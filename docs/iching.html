@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<!-- meta -->
+    <meta charset="utf-8">
+    <title>hipertextos: Iching web developement principles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="code and content writers - Barcelona web design and copywriting">
+	<meta name="author" content="hipertextos">
+    <!-- Styles -->
+    <link href="../hipertextos/css/styles.css" rel="stylesheet" media="screen">
+    <link href="../hipertextos/css/anime.css" rel="stylesheet" media="screen">
+    <link href="../hipertextos/css/print.css" rel="stylesheet" media="print">
+    <!--[if lt IE 9]><script src="../hipertextos/js/html5shiv.js"></script><![endif]-->
+	<!-- If JS disabled --><noscript><link href="../hipertextos/css/noscript.css" rel="stylesheet" media="screen"></noscript>
+	<!-- Site Feed -->
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="../hipertextos/?/feed/" />
+    <!-- Page Icons -->
+    <link rel="shortcut icon" href="../hipertextos/ics/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../hipertextos/ics/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../hipertextos/ics/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../hipertextos/ics/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../hipertextos/ics/apple-touch-icon-57-precomposed.png">
+  </head>
+  <body>
+   
+    	<div class="menu left flat black" id="menu">
+		<nav class="flat black">
+			<a data-tab="page-navigation" class="icon-hipertextos"></a>
+			<a data-tab="page-summary" class="icon-bookmark"></a>
+			<a data-tab="page-follow" class="icon-feed"></a>
+			<a data-tab="page-tools" class="icon-share"></a>
+			<a data-tab="page-settings" class="icon-cog"></a>
+		</nav>
+  		<section class="page-navigation">
+  			<h4>Search</h4>
+			<form class="form-search" action="http://www.google.com/cse">
+				<input type="hidden" name="cx" value="003165193387761205229:ixrm4rigjmk" />
+				<input type="text" name="q" />
+				<input type="submit" name="sa" class="search" value="Search" />
+			</form>
+			<h4>Index</h4>
+			<ul>
+				<li><a href="index.html" title="hipertextos">Home</a></li>
+				<li><a href="http://articles.hipertextos.net" title="Blog">Blog</a></li>
+				<li><a href="services.html" title="Services">Services</a></li>
+				<li><a href="framework.html" title="Framework">Framework</a></li>
+				<li><a href="iching.html" title="Iching principles">Iching principles</a></li>
+			</ul>
+		</section>
+		<section class="page-summary">
+			<h4>Summary</h4>
+			<div id="intoc"></div>
+		</section>
+		<section class="page-follow">
+			<h4>Follow</h4>
+			<ul>
+				<li><a href="http://articles.hipertextos.net/feeds/posts/default" title="Follow us with RSS">RSS</a></li>
+				<li><a href="http://twitter.com/hipertextos" title="Follow us at Twitter">Twitter</a></li>
+				<li><a href="https://plus.google.com/u/0/+EdHipertextos/" title="Follow us at Google +">Google +</a></li>
+			</ul>
+		</section>
+		<section class="page-tools">
+			<h4>Share</h4>
+			<div class="buttons-share"></div>
+			<h4>Translate</h4>
+			<div class="buttons-translate"></div>
+		</section>
+		<section class="page-settings">
+			<h4>View settings</h4>
+			<ul>
+				<li><a id="view-menu-top" title="Change the menu position"> Menu at top</a></li>
+				<li><a id="view-menu-left" title="Change the menu position"> Menu at left</a></li>
+				<li><a id="view-menu-right" title="Change the menu position"> Menu at right</a></li>
+				<li><a id="view-menu-bottom" title="Change the menu position"> Menu at bottom</a></li>
+			</ul>
+		</section>
+  	</div>
+  	
+	<div class="page" id="page">
+		<header class="header-cover universe thin">
+			<div class="icon xxg">
+				<svg id="animated-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" enable-background="new -50 652 512 512" xml:space="preserve"><rect x="38.5" y="38.5" width="184.545" height="39.545"/><rect x="288.5" y="38.5" width="184.545" height="39.545"/><rect x="38.5" y="117.5" width="184.545" height="39.545"/><rect x="288.5" y="117.5" width="184.545" height="39.545"/><rect x="38.5" y="354.5" width="184.545" height="39.545"/><rect x="288.5" y="354.5" width="184.545" height="39.545"/><rect x="38.5" y="433.5" width="184.545" height="39.545"/><rect x="38.5" y="275.5" width="434.545" height="39.545"/><rect x="38.5" y="196.5" width="434.545" height="39.545"/><rect x="288.5" y="433.5" width="184.545" height="39.545"/></svg>
+			</div>
+			<h1 class="g anime anm-scaleUpDown">Iching</h1>
+			<h6 class="xl anime anm-scaleUp">web developement <br class="visible-phone">principles</h6>			
+			<a href="#content" class="button-icon shallow white circled xl symbol-bottom anime anm-moveFromTopFade"></a>
+		</header>
+		<div class="container">
+			<div class="content universe thin" id="content">
+				<div class="icon xxg icon-yingyang loopRotate"></div>
+				<h2>the iching <br class="visible-phone">phylosophy</h2>
+				<div class="thumb-3 blocked-half blocked-half">
+					<figure class="figure-slide-left l">
+					<a href="#heaven" title="heaven">
+						<div class="icon-iching-heaven first"></div>
+						<div class="icon-sky second"></div>
+						<figcaption>the Heaven</figcaption>
+					</a>
+					</figure>
+					<h4 class="l">be creative</h4>
+				</div>
+				<div class="thumb-3 blocked-half blocked-half">
+					<figure class="figure-slide l">
+					<a href="#earth" title="earth">
+						<div class="icon-iching-earth first"></div>
+						<div class="icon-stones second"></div>
+						<figcaption>the Earth</figcaption>
+					</a>
+					</figure>
+					<h4 class="l">be receptive</h4>
+				</div>
+				<hr class="visible-phone">
+				<div class="thumb-3 blocked-half blocked-half">
+					<figure class="figure-slide l">
+					<a href="#fire" title="fire">
+						<div class="icon-iching-fire first"></div>
+						<div class="icon-fire second"></div>
+						<figcaption>the Fire</figcaption>
+					</a>
+					</figure>
+					<h4 class="l">be tenacious</h4>
+				</div>
+				<div class="thumb-3 blocked-half blocked-half">
+					<figure class="figure-slide-right l">
+					<a href="#water" title="water">
+						<div class="icon-iching-water first"></div>
+						<div class="icon-water second"></div>
+						<figcaption>the Water</figcaption>
+					</a>
+					</figure>
+					<h4 class="l">be profound</h4>
+				</div>
+				<hr>
+				<div class="thumb-3 blocked-half blocked-half">
+					<figure class="figure-slide-left l">
+					<a href="#wind" title="wind">
+						<div class="icon-iching-wind first"></div>
+						<div class="icon-wind second"></div>
+						<figcaption>the Wind</figcaption>
+					</a>
+					</figure>
+					<h4 class="l">be gentle</h4>
+				</div>
+				<div class="thumb-3 blocked-half blocked-half">
+					<figure class="figure-slide-bottom l">
+					<a href="#thunder" title="thunder">
+						<div class="icon-iching-thunder first"></div>
+						<div class="icon-lightning second"></div>
+						<figcaption>the Thunder</figcaption>
+					</a>
+					</figure>
+					<h4 class="l">be exciting</h4>
+				</div>
+				<hr class="visible-phone">
+				<div class="thumb-3 blocked-half blocked-half">
+					<figure class="figure-slide-bottom l">
+					<a href="#lake" title="lake">
+						<div class="icon-iching-lake first"></div>
+						<div class="icon-drop second"></div>
+						<figcaption>the Lake</figcaption>
+					</a>
+					</figure>
+					<h4 class="l">be complete</h4>
+				</div>
+				<div class="thumb-3 blocked-half blocked-half">
+					<figure class="figure-slide-right l">
+					<a href="#mountain" title="mountain">
+						<div class="icon-iching-mountain first"></div>
+						<div class="icon-mountain second"></div>
+						<figcaption>the Mountain</figcaption>
+					</a>
+					</figure>
+					<h4 class="l">be resistant</h4>
+				</div>
+				<hr><hr>
+			</div>
+		</div>
+		<hr class="line soft-grey">
+		<div class="container" id="heaven">
+			<div class="content universe thin">
+				<div class="icon xg icon-iching-heaven"></div>
+				<p class="lead">ch'ien</p>
+				<h2 class="intoc xxl">as the Heaven: <br class="visible-phone">be creative</h2>
+				<blockquote class="lines-quote">"if you are alert to the Creative, you will meet with good fortune now"</blockquote>
+				<hr>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-branding"></div></figure>
+					<h5>branding</h5>
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-naming"></div></figure>
+					<h5>naming</h5>				
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-imaging"></div></figure>
+					<h5>imaging</h5>
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-developing"></div></figure>
+					<h5>developing</h5>				
+				</div>
+				<hr>
+				<a href="#earth" class="button-icon shallow white circled xl symbol-bottom iconanim"></a>
+			</div>
+			<hr class="line soft-grey">
+		</div>
+		<div class="container" id="earth">
+			<div class="content universe thin">
+				<div class="icon xg icon-iching-earth"></div>
+				<p class="lead">k'un</p>
+				<h2 class="intoc xxl">as the Earth: <br class="visible-phone">be receptive</h2>
+				<blockquote class="lines-quote">"Bear with things as the earth bears with us: by yielding, by accepting, by nourishing"</blockquote>
+				<hr>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-abacus"></div></figure>
+					<h5>learning</h5>
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-conversation"></div></figure>
+					<h5>conversating</h5>				
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-share3"></div></figure>
+					<h5>sharing</h5>
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-mindopen"></div></figure>
+					<h5>mind-opening</h5>				
+				</div>
+				<hr>
+				<a href="#fire" class="button-icon shallow white circled xl symbol-bottom iconanim"></a>
+			</div>
+			<hr class="line soft-grey">
+		</div>
+		<div class="container" id="fire">
+			<div class="content universe thin">
+				<div class="icon xg icon-iching-fire"></div>
+				<p class="lead">li</p>
+				<h2 class="intoc xxl">as the Fire: <br class="visible-phone">be tenacious</h2>
+				<blockquote class="lines-quote">"Cling to the power of higher truth"</blockquote>
+				<hr>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-working"></div></figure>
+					<h5>working</h5>
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-communities"></div></figure>
+					<h5>engaging</h5>				
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-innovative"></div></figure>
+					<h5>innovating</h5>
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-rocket"></div></figure>
+					<h5>launching</h5>				
+				</div>
+				<hr>
+				<a href="#water" class="button-icon shallow white circled xl symbol-bottom iconanim"></a>
+			</div>
+			<hr class="line soft-grey">
+		</div>
+		<div class="container" id="water">
+			<div class="content universe thin">
+				<div class="icon xg icon-iching-water"></div>
+				<p class="lead">k'an</p>
+				<h2 class="intoc xxl">as the Water: <br class="visible-phone">be profound</h2>
+				<blockquote class="lines-quote">"Flow like pure water through difficult situations"</blockquote>
+				<hr>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-analysis"></div></figure>
+					<h5>analyzing</h5>
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-plant"></div></figure>
+					<h5>knowing</h5>				
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-hierarchy"></div></figure>
+					<h5>understanding</h5>
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-newtons"></div></figure>
+					<h5>flowing</h5>				
+				</div>
+				<hr>
+				<a href="#wind" class="button-icon shallow white circled xl symbol-bottom iconanim"></a>
+			</div>
+			<hr class="line soft-grey">
+		</div>
+		<div class="container" id="wind">
+			<div class="content universe thin">
+				<div class="icon xg icon-iching-wind"></div>
+				<p class="lead">sun</p>
+				<h2 class="intoc xxl">as the Wind: <br class="visible-phone">be gentle</h2>
+				<blockquote class="lines-quote">"Consistent correctness turns every situation to your advantage"</blockquote>
+				<hr>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-pentagon"></div></figure>
+					<h5>persuading</h5>
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-square"></div></figure>
+					<h5>simplifying</h5>				
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-triangle"></div></figure>
+					<h5>minimizing</h5>
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-circle"></div></figure>
+					<h5>optimizing</h5>				
+				</div>
+				<hr>
+				<a href="#thunder" class="button-icon shallow white circled xl symbol-bottom iconanim"></a>
+			</div>
+			<hr class="line soft-grey">
+		</div>
+		<div class="container" id="thunder">
+			<div class="content universe thin">
+				<div class="icon xg icon-iching-thunder"></div>
+				<p class="lead">ch'en</p>
+				<h2 class="intoc xxl">as the Thunder: <br class="visible-phone">be exciting</h2>
+				<blockquote class="lines-quote">"The shock of unsettling events brings fear and trembling. Move toward a higher truth and all will he well"</blockquote>
+				<hr>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-microscope"></div></figure>
+					<h5>focusing</h5>
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-structure"></div></figure>
+					<h5>structuring</h5>				
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-telescope"></div></figure>
+					<h5>prioritizing</h5>
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-conversion"></div></figure>
+					<h5>revolutioning</h5>				
+				</div>
+				<hr>
+				<a href="#lake" class="button-icon shallow white circled xl symbol-bottom iconanim"></a>
+			</div>
+			<hr class="line soft-grey">
+		</div>
+		<div class="container" id="lake">
+			<div class="content universe thin">
+				<div class="icon xg icon-iching-lake"></div>
+				<p class="lead">tui</p>
+				<h2 class="intoc xxl">as the Lake: <br class="visible-phone">be complete</h2>
+				<blockquote class="lines-quote">"True joy is experienced by those who are strong within and gentle without"</blockquote>
+				<hr>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-link"></div></figure>
+					<h5>integrating</h5>
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-eye"></div></figure>
+					<h5>taking perspective</h5>				
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-yingyang"></div></figure>
+					<h5>meditating</h5>
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-heart"></div></figure>
+					<h5>enjoying</h5>				
+				</div>
+				<hr>
+				<a href="#mountain" class="button-icon shallow white circled xl symbol-bottom iconanim"></a>
+			</div>
+			<hr class="line soft-grey">
+		</div>
+		<div class="container" id="mountain">
+			<div class="content universe thin">
+				<div class="icon xg icon-iching-mountain"></div>
+				<p class="lead">ken</p>
+				<h2 class="intoc xxl">as the Mountain: <br class="visible-phone">be resistant</h2>
+				<blockquote class="lines-quote">"Still your emotions through meditation"</blockquote>
+				<hr>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-treeyoung"></div></figure>
+					<h5>growing</h5>
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-tree3"></div></figure>
+					<h5>building</h5>				
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-plantinhand"></div></figure>
+					<h5>protecting</h5>
+				</div>
+				<div class="thumb-3 blocked-half">
+					<figure><div class="icon xxg iconanim icon-treewind"></div></figure>
+					<h5>keeping still</h5>				
+				</div>
+				<hr>
+			</div>
+			<hr>
+		</div>
+		
+
+		<footer class="universe thin flat black">
+			<a href="http://hipertextos.net" title="www.hipertextos.net"><div class="icon xxt icon-hipertextos"></div></a>
+			<h2>"the preponderance of the small"</h2>
+			<h5><a href="http://hipertextos.net" title="www.hipertextos.net">hipertextos</a></h5>
+			<h6>code & content writers</h6>
+			<div class="button-centered">
+				<a class="button flat hard-grey" href="contact.html">Contact</a>
+				<a class="button flat hard-grey" href="about.html">About</a>
+			</div>
+			<hr>
+			<hr>
+		</footer>
+   </div>
+    <!-- Scripts
+    ================================================== -->
+    <script src="../hipertextos/js/jquery.js" type="text/javascript"></script>
+    <script src="../hipertextos/js/anime.js" type="text/javascript"></script>
+    <script src="../hipertextos/js/scripts.js" type="text/javascript"></script>
+    <script src="../hipertextos/js/icons.js" type="text/javascript"></script>
+    <script>
+	$(document).ready(function(){
+		$('#animated-logo rect:nth-child(2n+1)').addClass('anime anm-moveFromLeft slow');
+		$('#animated-logo rect:nth-child(2n)').addClass('anime anm-moveFromRight slow');
+	});
+
+	// Animations on scroll
+
+	var win = $(window);
+	var logo1 = $('#animated-logo rect:nth-child(2n+1)');
+	var logo2 = $('#animated-logo rect:nth-child(2n)');
+	var heading1 = $('h1');
+	var heading2 = $('h2');
+	var heading3 = $('h3');
+	var heading4 = $('h4');
+	var heading5 = $('h5');
+	var heading6 = $('h6');
+	var anmfigures = $('.figure-slide, .figure-slide-left, .figure-slide-right, .figure-slide-bottom');
+	var anmquotes = $('.lines-quote');
+	var iconanime = $('.iconanim');
+	win.scroll(function(event) {
+	  logo1.each(function(i, el) {
+		var el = $(el);
+		if (el.visible(true)) {
+		  el.addClass('anime anm-moveFromLeft slow'); 
+		} else {
+		  el.removeClass('anime anm-moveFromLeft slow'); 
+		} 
+	  });
+	});
+	win.scroll(function(event) {
+	  logo2.each(function(i, el) {
+		var el = $(el);
+		if (el.visible(true)) {
+		  el.addClass('anime anm-moveFromRight slow'); 
+		} else {
+		  el.removeClass('anime anm-moveFromRight slow'); 
+		} 
+	  });
+	});
+	win.scroll(function(event) {
+	  heading1.each(function(i, el) {
+		var el = $(el);
+		if (el.visible(true)) {
+		  el.addClass('anime anm-scaleUpDown anm-delay500'); 
+		} else {
+		  el.removeClass('anime anm-scaleUpDown anm-delay500'); 
+		} 
+	  });
+	});
+	win.scroll(function(event) {
+	  heading2.each(function(i, el) {
+		var el = $(el);
+		if (el.visible(true)) {
+		  el.addClass('anime anm-scaleUpDown anm-delay500'); 
+		} else {
+		  el.removeClass('anime anm-scaleUpDown anm-delay500'); 
+		} 
+	  });
+	});
+	win.scroll(function(event) {
+	  heading3.each(function(i, el) {
+		var el = $(el);
+		if (el.visible(true)) {
+		  el.addClass('anime anm-rotateCarouselBottomIn anm-delay500'); 
+		} else {
+		  el.removeClass('anime anm-rotateCarouselBottomIn anm-delay500'); 
+		} 
+	  });
+	});
+	win.scroll(function(event) {
+	  heading4.each(function(i, el) {
+		var el = $(el);
+		if (el.visible(true)) {
+		  el.addClass('anime anm-rotateCarouselTopIn anm-delay500'); 
+		} else {
+		  el.removeClass('anime anm-rotateCarouselTopIn anm-delay500'); 
+		} 
+	  });
+	});
+	win.scroll(function(event) {
+	  heading5.each(function(i, el) {
+		var el = $(el);
+		if (el.visible(true)) {
+		  el.addClass('anime anm-scaleUpDown anm-delay500'); 
+		} else {
+		  el.removeClass('anime anm-scaleUpDown anm-delay500'); 
+		} 
+	  });
+	});
+	win.scroll(function(event) {
+	  heading6.each(function(i, el) {
+		var el = $(el);
+		if (el.visible(true)) {
+		  el.addClass('anime anm-scaleUp anm-delay500'); 
+		} else {
+		  el.removeClass('anime anm-scaleUp anm-delay500'); 
+		} 
+	  });
+	});
+	win.scroll(function(event) {
+	  anmfigures.each(function(i, el) {
+		var el = $(el);
+		if (el.visible(true)) {
+		  el.addClass('anime anm-scaleUp slow'); 
+		} else {
+		  el.removeClass('anime anm-scaleUp slow'); 
+		} 
+	  });
+	});
+	win.scroll(function(event) {
+	  anmquotes.each(function(i, el) {
+		var el = $(el);
+		if (el.visible(true)) {
+		  el.addClass('anime anm-moveFromBottomFade slow'); 
+		} else {
+		  el.removeClass('anime anm-moveFromBottomFade slow'); 
+		} 
+	  });
+	});
+	win.scroll(function(event) {
+	  iconanime.each(function(i, el) {
+		var el = $(el);
+		if (el.visible(true)) {
+		  el.addClass('anime anm-moveFromTopFade'); 
+		} else {
+		  el.removeClass('anime anm-moveFromTopFade'); 
+		} 
+	  });
+	});
+	$('#intoc').toc({
+		'selectors': '.intoc'
+	});
+    </script>
+  </body>
+</html>
