@@ -87,19 +87,18 @@
 			<p class="anime anm-scaleUp anm-delay1000">Barcelona</p>
 			<a href="#content" class="button-icon unify circled anime anm-moveFromTopFade"><span class="icon xl icon-mail"></span></a>
 		</header>
-		<main id="content" class="flat soft-grey">
+		<main id="content" class="">
+			<hr>
 			<h2 class="universe thin">contact</h2>
 			<div class="content">
 				<form id="form2" name="form2" class="universe xl" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://hipertextosbcn.wufoo.com/forms/m1uqssn50j4dk2x/#public">
-					<div class="cell-12">
-						<label class="desc" id="title4" for="Field4">Email<span id="req_4" class="req">*</span></label>
-						<input id="Field4" name="Field4" type="email" spellcheck="false" placeholder="your@email.com" class="block" value="" tabindex="1" required /> 
+					<div class="cell-12 formanime">
+						<input id="Field4" name="Field4" type="email" spellcheck="false" placeholder="your@email.com" class="block rounded" value="" tabindex="1" required /> 
 					</div>
-					<div class="cell-12">
-						<label class="desc" id="title2" for="Field2">Subject<span id="req_2" class="req">*</span></label>
+					<div class="cell-12 formanime">
 						<textarea id="Field2" 
 						name="Field2" 
-						class="field textarea medium" 
+						class="field textarea medium rounded" 
 						spellcheck="true" 
 						rows="10" cols="50" 
 						tabindex="2" 
@@ -108,7 +107,7 @@
 						required  ></textarea>
 					</div>
 					<div class="cell-12">					
-						<input id="saveForm" name="saveForm" class="block green" type="submit" value="send" />
+						<input id="saveForm" name="saveForm" class="block green formanime" type="submit" value="send" />
 					</div>
 					<hr>
 					<div class="closed">
@@ -146,6 +145,7 @@
 	var logo2 = $('#animated-logo rect:nth-child(2n)');
 	var headerh1 = $('header h1');
 	var headerp = $('header p');
+	var formanimated = $('.formanime');
 	win.scroll(function(event) {
 	  logo1.each(function(i, el) {
 		var el = $(el);
@@ -186,6 +186,17 @@
 		} 
 	  });
 	});
+	win.scroll(function(event) {
+	  formanimated.each(function(i, el) {
+		var el = $(el);
+		if (el.visible(true)) {
+		  el.addClass('anime anm-flipInTop anm-delay500 slow'); 
+		} else {
+		  el.removeClass('anime anm-flipInTop anm-delay500 slow'); 
+		} 
+	  });
+	});
     </script>
+    <script src="http://hipertextos.net/hipertextos/js/ga.js" type="text/javascript"></script>
   </body>
 </html>
