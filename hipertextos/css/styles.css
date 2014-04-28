@@ -1448,6 +1448,9 @@ nav .toggle svg {
 		display: block;
 		width: 100%;
 	}
+	nav .brand {
+		float: none;
+	}
 	.nav-persist a,
 	.nav-inline a {
 		display: inline-block;
