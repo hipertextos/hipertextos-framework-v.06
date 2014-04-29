@@ -754,7 +754,7 @@ nav .dropmenu {
 @media (max-width: 767px) {
 	.dropmenu,
 	.popmenu {
-		background-color: rgba(255,255,255.8);
+		background-color: rgba(255,255,255,.8);
 		position: relative;
 		margin-bottom: 1em;
 		width: 100%;
@@ -1224,6 +1224,7 @@ nav a img, nav svg {
 .right .nav-collapse a,
 .left .nav-content a, 
 .right .nav-content a {
+	clear: both;
 	display: block;
 	width: 100%;
 }
@@ -1235,9 +1236,10 @@ nav a img, nav svg {
 }
 .nav-extra {
 	display: block;
-	position: fixed;
+	position: absolute;
 }
 .nav-extra a {
+	display: inline;
 	display: inline-block;
 }
 .left .nav-extra {
@@ -1281,7 +1283,7 @@ nav .toggle svg {
 	width: 1.4em;
 }
 .menu {
-	border: thin solid #000;
+	border: thin solid rgba(255,255,255,.25);
 	z-index: 100;
 }
 .menu svg,
@@ -1448,13 +1450,17 @@ nav .toggle svg {
 		display: block;
 		width: 100%;
 	}
-	nav .brand {
-		float: none;
-	}
 	.nav-persist a,
 	.nav-inline a {
+		display: inline;
 		display: inline-block;
 		width: auto;
+	}
+	.bottom .brand,
+	.top .brand {
+		display: block;
+		float: none;
+		width: 100%;
 	}
 	.nav.top {
 		position: relative; 
@@ -1477,7 +1483,8 @@ nav .toggle svg {
 		float: none;
 		margin: 0 auto;
 	}
-	.nav-collapsed, .nav-extra {
+	.nav-collapsed,
+	.nav-extra {
 		display: none;
 	}
 	.nav-collapse-content, 
@@ -1761,6 +1768,7 @@ a.button-close {
 	position: fixed;
 	bottom: .5em; right: .2em;
 	text-align: center;
+	z-index: 100;
 }
 .content-fullscreen .to-top {
 	display: none;
@@ -2339,6 +2347,7 @@ figure:hover > .caption-onhover {
 .video iframe, 
 .video object, 
 .video embed,
+.video video,
 .vimeo iframe, 
 .vimeo object, 
 .vimeo embed,
@@ -3857,15 +3866,15 @@ a[class*='glass']:hover {
 [class*='metal'] svg {
 	stroke-width: .15em;
 }
-.light {
-	background-color: rgba(255,255,255,.95);
+.light, .light a {
+	background-color: rgba(255,255,255,.9);
 	color: #000;
 	fill: #000;
 }
 .light svg {
 	fill: #000;
 }
-.dark {
+.dark, .dark a {
 	background-color: rgba(0,0,0,.8);
 	color: #fff;
 	fill: #fff;
