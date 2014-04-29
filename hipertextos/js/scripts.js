@@ -281,8 +281,9 @@ $(function() {
 	// Custom menu
 	
 	// Opening the menu
-	$("nav .brand").click(function(){
-		$("#menu .nav-content").toggleClass('closed light');
+	$("#menu .brand").click(function(){
+		$("#menu").toggleClass('light');
+		$("#menu .nav-content").toggleClass('closed');
 		return false;
 	});
 	// Custom menu cookies
