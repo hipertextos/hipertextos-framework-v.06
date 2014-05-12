@@ -1299,7 +1299,6 @@ nav a img, nav svg {
 	top: 0;
 	right: 0;
 }
-nav .toggle, 
 nav .brand {
 	background: #000;
 	display: block;
@@ -1310,7 +1309,6 @@ nav .brand {
 }
 nav .toggle {
 	display: none;
-	float: right;
 }
 nav .brand {
 	border-radius: 50%;
@@ -1519,8 +1517,8 @@ nav .toggle svg {
 	}
 	nav .toggle {
 		display: block;
-		float: none;
 		margin: 0 auto;
+		width: 3em;
 	}
 	.nav-collapsed,
 	.nav-extra {
@@ -1773,7 +1771,7 @@ a.button-close {
 		clear: both;
 		display: block;
 		margin: 0 auto;
-		width: 96%; 
+		width: 100%; 
 	}
 	.button-group button, 
 	.button-group .button {
@@ -2002,7 +2000,7 @@ footer {
 
 article, aside, section {
 	border: thin solid #aaaaaa;
-	border: thin solid rgba(0,0,0,.25);
+	border: thin solid rgba(0,0,0,.1);
 	margin: 1em;
 	position: relative;
 	padding: .5em;
@@ -2010,11 +2008,11 @@ article, aside, section {
 }
 aside {
 	border: thin dashed #ddd;
-	border: thin dashed rgba(0,0,0,.25);
+	border: thin dashed rgba(0,0,0,.1);
 }
 section {
 	border: thin dotted #ddd;}
-	border: thin dotted rgba(0,0,0,.25);
+	border: thin dotted rgba(0,0,0,.1);
 
 @media (max-width: 768px) {
 	article, aside, section {
@@ -2087,198 +2085,6 @@ svg.icon {
 	height: 1em;
 	stroke-width: .05em;
 	width: 1em;
-}
-
-/* Image Filters */
-
-.blur, 
-.brightness, 
-.contrast, 
-.grayscale, 
-.huerotate, 
-.invert,
-.reflect,
-.saturate, 
-.antisaturate, 
-.sepialize,
-.blurh, 
-.brightnessh, 
-.contrasth, 
-.grayscaleh, 
-.huerotateh, 
-.inverth, 
-.saturateh, 
-.antisaturateh, 
-.sepializeh,
-.blur:hover, 
-.brightness:hover, 
-.contrast:hover, 
-.grayscale:hover, 
-.huerotate, 
-.invert:hover,
-.reflect:hover,
-.saturate:hover, 
-.antisaturate:hover, 
-.sepialize:hover,
-.blurh:hover, 
-.brightnessh:hover, 
-.contrasth:hover, 
-.grayscaleh:hover, 
-.huerotateh:hover, 
-.inverth:hover,
-.reflecth:hover,
-.saturateh:hover, 
-.antisaturateh:hover, 
-.sepializeh:hover {
-	/*Transition*/
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-ms-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-}
-.blur, 
-.blurh:hover {
-	/*Blur*/
-	filter:blur(2px);
-	-webkit-filter:blur(2px);
-	-moz-filter:blur(2px);
-	-ms-filter:blur(2px);
-	-o-filter:blur(2px);
- }
-.brightness, 
-.brightnessh:hover {
-	/*Hue Brightness*/
-	filter:brightness(0.5);
-	-webkit-filter:brightness(0.5);
-	-moz-filter:brightness(0.5);
-	-ms-filter:brightness(0.5);
-	-o-filter:brightness(0.5);
- }
-.contrast, 
-.contrasth:hover {
-	/*Hue Contrast*/
-	filter:contrast(0.3);
-	-webkit-filter:contrast(0.3);
-	-moz-filter:contrast(0.3);
-	-ms-filter:contrast(0.3);
-	-o-filter:contrast(0.3);
- }
-.grayscale, 
-.grayscalhe:hover {
-	/*Grayscale*/
-	filter:grayscale(1);
-	-webkit-filter:grayscale(1);
-	-moz-filter:grayscale(1);
-	-ms-filter:grayscale(1);
-	-o-filter:grayscale(1);
- }
-.huerotate, 
-.huerotateh:hover {
-	/*Hue Rotate*/
-	filter:hue-rotate(180deg);
-	-webkit-filter:hue-rotate(180deg);
-	-moz-filter:hue-rotate(180deg);
-	-ms-filter:hue-rotate(180deg);
-	-o-filter:hue-rotate(180deg);
- }
-.invert, 
-.inverth:hover {
-	/*Invert*/
-	filter:invert(1);
-	-webkit-filter:invert(1);
-	-moz-filter:invert(1);
-	-ms-filter:invert(1);
-	-o-filter:invert(1);
- }
-.reflect,
-.reflecth:hover {
-    -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.4)));
-}
-.saturate, 
-.saturateh:hover {
-	/*Saturate*/
-	filter:saturate(4);
-	-webkit-filter:saturate(4);
-	-moz-filter:saturate(4);
-	-ms-filter:saturate(4);
-	-o-filter:saturate(4);
-}
-.antisaturate, 
-.antisaturateh:hover {
-	/*Saturate*/
-	filter:saturate(.5);
-	-webkit-filter:saturate(.5);
-	-moz-filter:saturate(.5);
-	-ms-filter:saturate(.5);
-	-o-filter:saturate(.5);
-}
-.sepialize, 
-.sepializeh:hover {
-	/*Sepia*/
-	filter:sepia(1);
-	-webkit-filter:sepia(1);
-	-moz-filter:sepia(1);
-	-ms-filter:sepia(1);
-	-o-filter:sepia(1);
-}
-.blurh:hover, 
-.brightnessh:hover, 
-.contrasth:hover, 
-.grayscaleh:hover, 
-.huerotateh:hover, 
-.inverth:hover, 
-.saturateh:hover, 
-.sepializeh:hover,
-.antisaturateh:hover {
-	/*Blur*/
-	filter:blur(0px);
-	-webkit-filter:blur(0px);
-	-moz-filter:blur(0px);
-	-ms-filter:blur(0px);
-	-o-filter:blur(0px);
-  	/*Grayscale*/
-	filter:grayscale(0);
-	-webkit-filter:grayscale(0);
-	-moz-filter:grayscale(0);
-	-ms-filter:grayscale(0);
-	-o-filter:grayscale(0);
-	/*Hue Brightness*/
-	filter:brightness(0);
-	-webkit-filter:brightness(0);
-	-moz-filter:brightness(0);
-	-ms-filter:brightness(0);
-	-o-filter:brightness(0);
-  	/*Hue Contrast*/
-	filter:contrast(0);
-	-webkit-filter:contrast(0);
-	-moz-filter:contrast(0);
-	-ms-filter:contrast(0);
-	-o-filter:contrast(0);
-  	/*Hue Rotate*/
-	filter:hue-rotate(0deg);
-	-webkit-filter:hue-rotate(0deg);
-	-moz-filter:hue-rotate(0deg);
-	-ms-filter:hue-rotate(0deg);
-	-o-filter:hue-rotate(0deg);
-	/*Invert*/
-	filter:invert(0);
-	-webkit-filter:invert(0);
-	-moz-filter:invert(0);
-	-ms-filter:invert(0);
-	-o-filter:invert(0);
-	/*Saturate*/
-	filter:saturate(0);
-	-webkit-filter:saturate(0);
-	-moz-filter:saturate(0);
-	-ms-filter:saturate(0);
-	-o-filter:saturate(0);
-	/*Sepia*/
-	filter:sepia(0);
-	-webkit-filter:sepia(0);
-	-moz-filter:sepia(0);
-	-ms-filter:sepia(0);
-	-o-filter:sepia(0);
 }
 
 /* ------------------------------------------------------------ Figures */
@@ -3214,14 +3020,6 @@ div { /* block */ }
 	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
 	letter-spacing: .1em;
 }
-.elegant h1, 
-.elegant h2, 
-.elegant h3, 
-.elegant h4, 
-.elegant h5, 
-.elegant h6 { 
-	font-weight: normal; 
-}
 .elegant ol li { 
 	list-style-type: upper-roman; 
 }
@@ -3237,13 +3035,6 @@ div { /* block */ }
 	font-family: Chalkboard, Casual, 'Comic Sans MS', Verdana, sans-serif;
 	letter-spacing: .1em;
 }
-.funny h1, 
-.funny h2, 
-.funny h3, 
-.funny h4, 
-.funny h5, 
-.funny h6 { 
-	font-weight: normal; }
 
 /* Gothik Style */
 
@@ -3251,14 +3042,6 @@ div { /* block */ }
 .gothik blockquote:after, 
 .gothik blockquote:before {
  	font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
-}
-.gothik h1, 
-.gothik h2, 
-.gothik h3, 
-.gothik h4, 
-.gothik h5, 
-.gothik h6 { 
-	font-weight: normal; 
 }
 
 /* Hard Style */
@@ -3270,14 +3053,6 @@ div { /* block */ }
 	font-size: 1.25em;
 	letter-spacing: .05em;
 }
-.hard h1, 
-.hard h2, 
-.hard h3, 
-.hard h4, 
-.hard h5, 
-.hard h6 { 
-	font-weight: normal; 
-}
 
 /* Modern Style */
 
@@ -3285,14 +3060,6 @@ div { /* block */ }
 .modern blockquote:after, 
 .modern blockquote:before {
 	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-}
-.modern h1, 
-.modern h2, 
-.modern h3, 
-.modern h4, 
-.modern h5, 
-.modern h6 { 
-	font-weight: normal; 
 }
 .modern ul li { 
 	list-style-type: circle; 
@@ -3304,14 +3071,6 @@ div { /* block */ }
 .monospace blockquote:after, 
 .monospace blockquote:before {
   	font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-}
-.monospace h1, 
-.monospace h2, 
-.monospace h3, 
-.monospace h4, 
-.monospace h5, 
-.monospace h6 {	
-	font-weight: normal; 
 }
 .monospace ul li { 
 	list-style-type: square; 
@@ -3326,15 +3085,6 @@ div { /* block */ }
 	font-weight: 100; 
 	letter-spacing: .1em;
 }
-.thin h1, 
-.thin h2, 
-.thin h3, 
-.thin h4, 
-.thin h5, 
-.thin h6 { 
-	font-weight: 100; 
-	letter-spacing: .1em;
-}
 .thin ul li { 
 	list-style-type: circle; 
 }
@@ -3345,14 +3095,6 @@ div { /* block */ }
 .techno blockquote:after, 
 .techno blockquote:before {
   	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
-}
-.techno h1, 
-.techno h2, 
-.techno h3, 
-.techno h4, 
-.techno h5, 
-.techno h6 {	
-	font-weight: normal; 
 }
 .techno ul li { 
 	list-style-type: square; 
@@ -3365,14 +3107,7 @@ div { /* block */ }
 .typewriter blockquote:before {
   	font-family: 'Special Elite', Times New Roman, serif;
 }
-.typewriter h1, 
-.typewriter h2, 
-.typewriter h3, 
-.typewriter h4, 
-.typewriter h5, 
-.typewriter h6 { 
-	font-weight: normal; 
-}
+
 
 /* ------------------------------------------------------------ Colors */
 
