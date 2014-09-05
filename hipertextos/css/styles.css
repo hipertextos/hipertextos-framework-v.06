@@ -1146,17 +1146,17 @@ nav .form-unified input {
  
 /* Form layouts */
 
-[class*='cell'] input[type=text],
-[class*='cell'] label,
-[class*='cell'] select,
-[class*='cell'] textarea {
+form [class*='cell'] input[type=text],
+form [class*='cell'] label,
+form [class*='cell'] select,
+form [class*='cell'] textarea {
 	display: block;
 	width: 100%;
 }
 legend,
-[class*='cell'] label,
-[class*='cell'] p,
-[class*='cell'] span {
+form [class*='cell'] label,
+form [class*='cell'] p,
+form [class*='cell'] span {
 	color: #aaa;
 	color: rgba(0,0,0,.5);
 	font-size: 0.75em;
@@ -1914,12 +1914,15 @@ footer {
 /* Header Variations */
 
 .header-app {
-	height: 2.5em;
+	background-position: 20%;
+	background-size: 20%;
+	background-repeat: no-repeat;
+	height: 5em;
 	overflow: visible;
 }
 .header-app * {
-	font-size: 2.5em;
-	line-height: 2.5em;
+	font-size: 1.25em;
+	line-height: 1em;
 	margin: 0;
 	padding: 0;
 } 
